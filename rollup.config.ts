@@ -2,7 +2,7 @@ import { RollupOptions } from "rollup";
 import typescript from "@rollup/plugin-typescript";
 import { createTransformer } from "static-injector/transform";
 import nodeResolve from "@rollup/plugin-node-resolve";
-import { terser } from "rollup-plugin-terser";
+import terser from '@rollup/plugin-terser';
 const config: RollupOptions = {
   input: "src/index.ts",
   output: { file: "./dist/main.js", format: "iife" },
